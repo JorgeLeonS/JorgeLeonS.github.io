@@ -99,7 +99,7 @@ html {
 }
 
 body {
-    background: #64735D;
+    background: #1F4034;
 }
 
     body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -121,6 +121,10 @@ body, input, select, textarea {
     font-size: 16.5pt;
     font-weight: normal;
     line-height: 1.75;
+}
+
+.clearText{
+    color: #b8b3afe5;
 }
 
 @media screen and (max-width: 1680px) {
@@ -195,10 +199,10 @@ h1 {
     }
 
         h1.major:after {
-            background-image: -moz-linear-gradient(to right, #B0997B, #E6DCD2);
-            background-image: -webkit-linear-gradient(to right, #B0997B, #E6DCD2);
-            background-image: -ms-linear-gradient(to right, #B0997B, #E6DCD2);
-            background-image: linear-gradient(to right, #B0997B, #E6DCD2);
+            background-image: -moz-linear-gradient(to right, #AA4516, #F29D4B);
+            background-image: -webkit-linear-gradient(to right, #AA4516, #F29D4B);
+            background-image: -ms-linear-gradient(to right, #AA4516, #F29D4B);
+            background-image: linear-gradient(to right, #AA4516, #F29D4B);
             -moz-transition: max-width 0.2s ease;
             -webkit-transition: max-width 0.2s ease;
             -ms-transition: max-width 0.2s ease;
@@ -2047,7 +2051,7 @@ button,
     button.primary,
     .button.primary {
         background-color: #ffffff;
-        color: #2D402C !important;
+        color: #14281F !important;
     }
 
         input[type="submit"].primary:after,
@@ -2484,7 +2488,7 @@ select {
 
     select option {
         color: #ffffff;
-        background: #2D402C;
+        background: #14281F;
     }
 
     select:focus::-ms-value {
@@ -2653,7 +2657,7 @@ input[type="radio"] {
         display: block;
         background: #ffffff;
         border-radius: 100%;
-        color: #2D402C;
+        color: #14281F;
         text-align: center;
         line-height: 2.5em;
         margin: 0 0 1.3em 0;
@@ -2664,11 +2668,11 @@ input[type="radio"] {
         }
 
 .wrapper.style1 .icon.major:before {
-    color: #A5CDAB;
+    color: #1F4034;
 }
 
 .wrapper.style1-alt .icon.major:before {
-    color: #2D402C;
+    color: #14281F;
 }
 
 .wrapper.style2 .icon.major:before {
@@ -2680,7 +2684,7 @@ input[type="radio"] {
 }
 
 .wrapper.style3 .icon.major:before {
-    color: #BFA68F;
+    color: #f68100;
 }
 
 .wrapper.style3-alt .icon.major:before {
@@ -3158,7 +3162,7 @@ input[type="radio"] {
             -webkit-transition: opacity 1s ease;
             -ms-transition: opacity 1s ease;
             transition: opacity 1s ease;
-            background: #2D402C;
+            background: #14281F;
             content: '';
             display: block;
             height: 100%;
@@ -3371,27 +3375,32 @@ input[type="radio"] {
     }
 
     .wrapper.alt {
-        background-color: #2D402C;
+        background-color: #14281F;
     }
 
     .wrapper.style1 {
-        background-color: #A5CDAB;
+        background-color: #1F4034;
     }
 
+    .wrapper.style4 {
+        background-color: #f5a55b;
+    }
+
+
     .wrapper.style1-alt {
-        background-color: #2D402C;
+        background-color: #1F4034;
     }
 
     .wrapper.style2 {
-        background-color: #E6DCD2;
+        background-color: #334542;
     }
 
     .wrapper.style2-alt {
-        background-color: #64735D;
+        background-color: #1F4034;
     }
 
     .wrapper.style3 {
-        background-color: #BFA68F;
+        background-color: #e7b57c;
     }
 
     .wrapper.style3-alt {
@@ -3503,7 +3512,7 @@ input[type="radio"] {
         display: -webkit-flex;
         display: -ms-flex;
         display: flex;
-        background-color: #2D402C;
+        background-color: #14281F;
         cursor: default;
         padding: 1.75em 2em;
         position: fixed;
@@ -3658,7 +3667,7 @@ input[type="radio"] {
 
     #sidebar {
         padding: 2.5em 2.5em 0.5em 2.5em;
-        background: #2D402C;
+        background: #14281F;
         cursor: default;
         height: 100vh;
         left: 0;
@@ -3899,10 +3908,10 @@ input[type="radio"] {
         }
 
         #sidebar nav a:after {
-            background-image: -moz-linear-gradient(to right, #B0997B, #E6DCD2);
-            background-image: -webkit-linear-gradient(to right, #B0997B, #E6DCD2);
-            background-image: -ms-linear-gradient(to right, #B0997B, #E6DCD2);
-            background-image: linear-gradient(to right, #B0997B, #E6DCD2);
+            background-image: -moz-linear-gradient(to right, #AA4516, #F29D4B);
+            background-image: -webkit-linear-gradient(to right, #AA4516, #F29D4B);
+            background-image: -ms-linear-gradient(to right, #AA4516, #F29D4B);
+            background-image: linear-gradient(to right, #AA4516, #F29D4B);
             -moz-transition: max-width 0.2s ease;
             -webkit-transition: max-width 0.2s ease;
             -ms-transition: max-width 0.2s ease;
@@ -3991,7 +4000,7 @@ input[type="radio"] {
 
                     #sidebar nav a:after {
                         background-image: none;
-                        background-color: #E6DCD2;
+                        background-color: #F29D4B;
                     }
     }
 

@@ -24,23 +24,75 @@
 
 				<!-- Main -->
 					<section id="main" class="wrapper descriptionPage">
-						<div class="inner">
+						<div class="inner clearText">
 							<h1 class="major">Dementia</h1>
 							<!-- TODO Add the src -->
-							<iframe class="video" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-							<h3>What is it?</h3>
+							<p>Pending video...</p>
+							<iframe class="video" src="https://www.youtube.com/embed/5_3_r50QQyAasd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<h2>What is it?</h2>
 							<p>
-								Client project for the VR/AR design and development program at Vancouver Film School, wokring for TTT Studios.
+								A story based experience, developed in Unity, where the user will see visual impairments that try imitate dementia symptoms.
+								Its original use case, was to create empathy on professional and at home carers, so that they have a better understanding about the struggles
+								that a person with dementia might experiment daily.
+								<br>
+								It was delivered as the client project for TTT Studios on the VR/AR design and development program at Vancouver Film School.
 							</p>
-							<h3>How did we do it?</h3>
+							<h2>How did we do it?</h2>
 							<p>
-								The team started with 4 people (me included), who did the all the development, later, some people from the same school joined and helped with design, story, and SFX.
-								<br>It's an Unreal Engine 5 VR network game for up to four players.
+								In a team of four people, we were assigned with the task to ideate and develop "A VR experience that puts dementia care workers in the shoes of someone who has dementia would go a long way toward understanding the people they’re taking care of."
+								<br>
+								The team decided to go for a story based experience, where they are take the place of a person with dementia and have a someone helping them regularly with daily tasks.
+								The user does not have many interactions other than asking for help, and experience first hand
 							</p>
-							<h3>What did I do?</h3>
+							<h2>What did I do?</h2>
 							<p>
-								The team started with 4 people (me included), who did the all the development, later, some people from the same school joined and helped with design, story, and SFX.
-								<br>It's an Unreal Engine 5 VR network game for up to four players.
+								Because of the limited time we had (4 months) to plan, develop, adjust with the client likings, and other projects + homework, I knew before starting that someone would have to take the main responsability.
+								I made the suggestion of being the main programmer and project manager because I considered myself the person with the most experience, to which all the team members agreed on.  
+
+								<h3>Project management</h3>
+								Following the basics for an agile methodology, I created a Trello board for the tasks together with the team, assigning priority, and the category we considered. We had weekly meetings, on which I would move all the member's tasks and continuously replan according to everyone's progress and impediments.
+								Another person from the team and I created the timeline and defined the scope capacity based on the tasks we had, and we all together defined the risks that the project could come across.
+								<br><br>
+								<h3>Programming</h3>
+								The project required us to use Unity, so I set up the repository on Github and a basic engine structure with the XR Interaction Toolkit, for which I had a coulpe of sessions with the other team memebrs for teaching them how to use, since not everyone had experience with either Github, or Unity.
+								<br>
+								Once the very basic functionality was done, I started to think on the best approach of how not so techical people could understand, and with the proper training, develop a story based experience.
+								For this, I adjusted all the calls and assignations between objects inside of the scripts and created a template scene, on which there are very few objects that should be edited.
+								<!-- *** ADD IMAGE ABOUT HANDLERS *** -->
+								<br>
+								This allowed the people with less experience to understand more easily where a dialogue or an action can be added and how to organize it in a specific order.
+								Although I managed to get various of the character actions to be fully managed on the engine, such as the dialogues text, audios, durations, animations, and even walking paths, most of the other interactions had to be programmed (Although the order of everything that happens on the experience is set on the engine). 
+								<br>
+								<br>
+								<h5> What I could have improved: </h5>
+								<ul>
+									<li>
+										<!-- ** TODO CREATE A SIMPLE DESIGN OF HOW IT COULD LOOK ** (FIGMA?) -->
+										If I had more time, I would like to create a more restrictive, custom editor for the actions that depending on the interaction to have, it adds, or removes inputs, so that it can be much easier to keep track of how everything is called. 
+									</li>
+									<li>
+										<!-- ** TODO CREATE A SIMPLE DESIGN OF HOW IT COULD LOOK ** (FIGMA?) -->
+										I'm also very sure that the other interactions, such as grabbing an item, controlling lights, playing or pausing a visual effect, etc. Although they must be initially programmed, they could be kept on a list and then called and adjusted also in engine, so it makes the job for the designers way easier.
+									</li>
+								</ul>
+								<h5> If you want to know a little more about how everything works... </h5>
+								I decided to create a coroutine event based communication between an interactions manager script, characters, a player, and scene actions.
+								The manager script iterates through a list that is filled on the inspector per scene and calls the respective event, so the subscribed class performs somehting. <!-- *ADD IMAGE OF LIST IN INSPECTOR AND HOW THE EVENT IS CALLED ON THE DoNextInteraction() mehtod* -->
+								<ul>
+									<li>
+										Multiple characters: <!-- *ADD IMAGE OR GIF OF JAMES IN ACTION OR HOW IT WORKS* -->
+										<ul>
+											<li>A dialogue with a text to be displayed, and either an audio or a fixed duration.</li>
+											<li>Walk somewhere</li>
+											<li>Play an animation</li>
+										</ul>
+									</li>
+									<li>
+										A player:
+
+									</li>
+									
+								</ul>
 							</p>
 						</div>
 					</section>
