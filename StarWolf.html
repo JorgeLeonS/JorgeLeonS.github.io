@@ -31,31 +31,70 @@
 							<iframe class="video" src="https://www.youtube.com/embed/5_3_r50QQyAasd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							<h2>What is it?</h2>
 							<p>
-								Pending description...
+								Consists in a space based game, where the player constantly moves forward while avoiding and/or shooting different objects such as inmobile mines, and space debris, but also following enemies. The movement mechanics is based on the game Starfox.
 							</p>
-							<h2>How did we do it?</h2>
-							<p>
-								Pending description...
-							</p>
-							<h2>What did I do?</h2>
-							<p>
-								Pending description...
-								<h5> What I could have improved: </h5>
-								<ul>
-									<li>
-										List Item 
-									</li>
-									<li>
-										Another list item
-									</li>
-								</ul>
-								<h5> If you want to know a little more about how everything works... </h5>
-								Pending description...
-							</p>
+							<h2>What does it have?</h2>
+							<ul>
+								<li>
+									Single and Multiplayer mode through UNet Networking (The same level is used in both modes but object instancing number is reduced in Multiplayer for better performance).
+								</li>
+								<span class="image fit"><img src="images/StarWolf/DemoImage2.png" alt="" /></span>
+								<li>
+									A Cinemachine Dolly Cart is implemented to keep a constant forward movement, limiting X and Y with the camera view
+								</li>
+								<span class="image fit"><img src="images/StarWolf/DemoImage3.png" alt="" /></span>
+								<li>
+									Instancing for different objects within an specified area, where every object type is assigned: 
+									<ul>
+										<li>
+											A random size in a range of values.
+										</li>
+										<li>
+											A different damage if the player collides.
+										</li>
+										<li>
+											Five levels of detail, reducing the polygon count for each object depending on the distance to the player.
+										</li>
+									</ul>
+								</li>
+								<span class="image fit"><img src="images/StarWolf/DemoImage1.png" alt="" /></span>
+								<li>
+									The following enemy guides itself to the player with a Finite State Machine: 
+									<ul>
+										<li>
+											A Mesh Filter is positioned in the level, checking on each Update the player's position, assigning an approximate value to the texture, so the enemy can find the player.
+										</li>
+										<li>
+											The player's position in the mesh can be seen with a Mesh Filter texture color, but it's disabled so as not to interfere with sight.
+										</li>
+									</ul>
+								</li>
+								<span class="image fit"><img src="images/StarWolf/DemoImage4.png" alt="" /></span>
+								<li>
+									The Mines that automatically end the game when the player collides with them are Tessellated octahedrons. 
+									<ul>
+										<li>
+											The octahedron is modeled inside the script with vertex, faces and connections.
+										</li>
+										<li>
+											It is tessellated 4 times, so it has the appearance of a sphere.
+										</li>
+										<li>
+											5 spikes are randomly generated for each sphere with normalized vectors.
+										</li>
+									</ul>
+								</li>
+								<span class="image fit"><img src="images/StarWolf/DemoImage5.png" alt="" /></span>
+								<li>
+									A rear view that shows when the player hits "3". It's a Render Texture that's positioned behind the player. When it's activated, the ship will also shoot backwards.
+								</li>
+								<span class="image fit"><img src="images/StarWolf/DemoImage6.png" alt="" /></span>
+							</ul>
+							<h2>Credits</h2>
+							<p>Final project for the Modeling and Animation class at the ITESM. Developed by: Alfredo Prado Cajiga, Alonso Narro Delgado and Jorge León Salas, assets and programming with the guidance of the professor, Sergio Ruiz Loza.</p>
 						</div>
 					</section>
-
-			</div>
+				</div>
 
 		<!-- Footer -->
 			<footer id="footer" class="wrapper alt">

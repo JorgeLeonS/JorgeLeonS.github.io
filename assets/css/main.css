@@ -2740,8 +2740,10 @@ input[type="radio"] {
 
         .image.fit {
             display: block;
-            margin: 0 0 2em 0;
-            width: 100%;
+            margin: 0 auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 80%;
         }
 
             .image.fit img {
