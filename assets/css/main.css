@@ -2768,6 +2768,15 @@ input[type="radio"] {
             width: 100%;
         }
     }
+    @media screen and (max-width: 736px) {        
+        .image.fit {
+            display: block;
+            margin: 0 auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+    }
 
     /* List */
 
