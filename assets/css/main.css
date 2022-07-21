@@ -2759,6 +2759,15 @@ input[type="radio"] {
             .image.main img {
                 width: 100%;
             }
+    @media screen and (max-width: 480px) {        
+        .image.fit {
+            display: block;
+            margin: 0 auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+    }
 
     /* List */
 
