@@ -1873,6 +1873,17 @@ header {
       position: absolute;
       height: auto;
       bottom: 150px;
+      left: 350px;
+    }
+  }
+
+  @media (max-width: 468px) {
+    header .header-text-overlay .row > [class^="col-"],
+    header .header-text-overlay .row > [class*=" col-"] {
+      position: absolute;
+      height: auto;
+      bottom: 150px;
+      left: 0;
     }
   }
 
@@ -1908,7 +1919,7 @@ header {
     header .header-bg-wrapper {
       /* background-size: cover; */
       background-position: top left;
-      background-size: 80%;
+      background-size: 80% !important;
     }
   }
   header .header-overlay {
@@ -1956,7 +1967,15 @@ header {
       max-height: 48vw;
     }
   }
+
   @media (max-width: 991px) {
+
+    header .header-bg-wrapper {
+        /* background-size: cover; */
+        background-position: left center;
+        background-size: 50%;
+      }
+
     header .container-fluid {
       height: auto;
     }
