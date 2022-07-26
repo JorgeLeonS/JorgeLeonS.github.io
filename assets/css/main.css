@@ -1745,7 +1745,7 @@ hr {
     }
 
         .row > * {
-            padding: 0 0 0 1.5em;
+            padding: 0 1em 0 1em;
         }
 
         .row.gtr-uniform {
@@ -1791,6 +1791,232 @@ hr {
                 }
 }
 
+/*------------------------------------------*/
+/*	 Bootstrap Overrides
+/*------------------------------------------*/
+.icon {
+    margin-bottom: 10px;
+  }
+  .icon [class^="icon-"],
+  .icon [class*=" icon-"] {
+    font-size: 45px;
+  }
+  .no-gutter > [class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  @media (max-width: 767px) {
+    .container {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    .container > .row {
+      margin: 0 -20px;
+    }
+  }
+
+/* ==========================================================================
+   HEADERS
+========================================================================== */
+header {
+    position: relative;
+    background-color: #1F4034;
+  }
+  header .container-fluid,
+  header .container {
+    height: 100vh;
+  }
+  header .container-fluid .row-fluid,
+  header .container .row-fluid {
+    height: 100%;
+  }
+  header .container-fluid .row-fluid > [class^="col-"],
+  header .container .row-fluid > [class^="col-"],
+  header .container-fluid .row-fluid > [class*=" col-"],
+  header .container .row-fluid > [class*=" col-"] {
+    height: 100%;
+    padding: 0;
+  }
+  header .container-fluid .row,
+  header .container .row {
+    height: 100%;
+  }
+  header .container-fluid .row > [class^="col-"],
+  header .container .row > [class^="col-"],
+  header .container-fluid .row > [class*=" col-"],
+  header .container .row > [class*=" col-"] {
+    height: 100%;
+  }
+  header .header-text-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  header .header-text-overlay .row {
+    position: relative;
+  }
+  header .header-text-overlay .row > [class^="col-"],
+  header .header-text-overlay .row > [class*=" col-"] {
+    position: absolute;
+    height: auto;
+    bottom: 20px;
+  }
+
+  @media (max-width: 991px) {
+    header .header-text-overlay .row > [class^="col-"],
+    header .header-text-overlay .row > [class*=" col-"] {
+      position: absolute;
+      height: auto;
+      bottom: 150px;
+    }
+  }
+
+  header .header-text-overlay .row > [class^="col-"] h1,
+  header .header-text-overlay .row > [class*=" col-"] h1 {
+    line-height: 60px;
+  }
+  header .header-text-overlay .row > [class^="col-"] .user-role,
+  header .header-text-overlay .row > [class*=" col-"] .user-role {
+    margin: 25px 0;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #f09b2dcb;
+  }
+  header .header-bg-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../images/Me/Me.png');
+    background-position: left bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  @media all and (max-width: 1023px) {
+    header .header-bg-wrapper {
+      background-size: contain;
+      background-position: top;
+    }
+  }
+  @media all and (max-width: 480px) {
+    header .header-bg-wrapper {
+      /* background-size: cover; */
+      background-position: top left;
+      background-size: 80%;
+    }
+  }
+  header .header-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(57, 78, 64, 0.64);
+  }
+  header .header-video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #000;
+    overflow: hidden;
+    position: relative;
+  }
+  header .header-video:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  header .header-video iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+    object-fit: cover;
+  }
+  header .header-video video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  @media (min-width: 992px) {
+    header .container-fluid,
+    header .container {
+      height: 100vh;
+      max-height: 48vw;
+    }
+  }
+  @media (max-width: 991px) {
+    header .container-fluid {
+      height: auto;
+    }
+    header .container-fluid .header-bg-wrapper {
+      min-height: 400px;
+      height: auto;
+    }
+    header .row-fluid {
+      height: 50% !important;
+    }
+    header .container {
+      height: 50vh ;
+    }
+    /* header .header-text-overlay .row > [class^="col-"],
+    header .header-text-overlay .row > [class*=" col-"] {
+      bottom: 35px;
+    } */
+  }
+  @media (max-width: 768px) {
+    .index-header {
+      display: none;
+    }
+  }
+  @media (max-width: 479px) {
+    header .header-text-overlay {
+      top: 90px;
+    }
+    header .header-text-overlay h1 {
+      font-size: 47px;
+      line-height: 47px !important;
+    }
+    header .header-text-overlay .row .user-role {
+      margin: 20px 0 !important;
+    }
+  }
+
+  .social-links {
+    display: inline-block;
+    margin-left: 0px;
+    padding-left: 0px;
+
+  }
+
+  .social-links li {
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 50% 50%;
+    margin: 10px 10px 10px 0;
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .social-links li i {
+    width: 100%;
+    text-align: center;
+    line-height: inherit;
+    display: inline-block;
+    font-size: 12px;
+  }
 /* ==========================================================================
    SKILL
 ========================================================================== */
