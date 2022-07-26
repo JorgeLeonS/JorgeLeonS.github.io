@@ -2001,7 +2001,7 @@ header {
   }
   @media (max-width: 479px) {
     header .header-text-overlay {
-      top: 90px;
+      top: 140px;
     }
     header .header-text-overlay h1 {
       font-size: 47px;
