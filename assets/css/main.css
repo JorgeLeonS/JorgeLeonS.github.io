@@ -38,6 +38,10 @@ ol, ul {
     list-style: none;
 }
 
+button{
+    margin-left: 55px;
+}
+
 blockquote, q {
     quotes: none;
 }
