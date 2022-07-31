@@ -51,6 +51,9 @@
 										<li> When a player is close to them, the self-destruct counter will start, making them jump, play an alerting sound and a glowing effect is triggered. It's pretty scary if you don't notice them... </li>
 										<li> They need to be shot 3 times in order to destroy them and not damage the player... Did I mention that, if the player gets damaged 5 times, it will be game over for everyone?</li>
 									</ul>
+								</ul>
+								<span class="image fit"><img src="images/Gifs/CA_Robots2.gif" alt="" /></span>
+								<ul>
 									<li> Spatialized sound implementation for all the robot actions: </li>
 									<ul>
 										<li> Matching footstep sound with walking, and running animation events. </li>
@@ -59,10 +62,10 @@
 									<li> Implemented all the gun mechanics for destroying the robots: </li>
 									<ul>
 										<li> I used a gun from the Lyra project template (By Epic games) and adapted it to VR. The model, Niagara VFX and SFX come were taken from that same project.</li>
-										<li> Implemented a raycast shooting mechanism that damages the robots.</li>
+										<li> Used a shooting mechanism that damages the robots.</li>
 									</ul>
 								</ul>
-								<span class="image fit"><img src="images/Gifs/Robots1.gif" alt="" /></span>
+								<span class="image fit"><img src="images/Gifs/CA_Robots1.gif" alt="" /></span>
 								<h3>Puzzles</h3>
 								When a player finds and enters a Terminal, two different puzzles can be spawned:
 								<ul>
@@ -71,18 +74,21 @@
 										The goal is to find where the matching pieces are and select them one after the other.
 										Once the user has found all the matching pairs, the puzzle will be completed. 
 									</li>
+								</ul>
+								<span class="image fit"><img src="images/Gifs/CA_Puzzle1.gif" alt="" /></span>
+								<ul>
 									<li>
 										An alignement puzzle. The player needs to grab the moving sphere and align the connection lasers to the contact points that are scattered around.
 										The goal is to align all the cables at the same time. This one, although sounds pretty simple to solve, because of the niagara effects implementation and the very bright lights (because of post processing), can be pretty confusing.
 									</li>
 								</ul>
-
+								<span class="image fit"><img src="images/Gifs/CA_Puzzle2.gif" alt="" /></span>
 							</p>
 						</div>
 					</section>
 
 			</div>
-
+		<br>	
 		<!-- Footer -->
 			<footer id="footer" class="wrapper alt">
 				<div class="inner">
