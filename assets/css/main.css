@@ -338,7 +338,12 @@ hr {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    align-items: stretch;
+    align-items: center;
+
+    margin-top: 0;
+    margin-left: -1.5em;
+
+    padding: 0 0 2em 0;
 }
 
     .row > * {
@@ -523,11 +528,6 @@ hr {
             .row.gtr-50.gtr-uniform > * {
                 padding-top: 0.75em;
             }
-
-.row {
-    margin-top: 0;
-    margin-left: -1.5em;
-}
 
     .row > * {
         padding: 0 0 0 1.5em;
@@ -1551,6 +1551,12 @@ hr {
                 }
 }
 
+@media screen and (max-width: 600px) {
+    .row{
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 480px) {
 
     .row {
@@ -1986,6 +1992,7 @@ header {
     header .container-fluid .header-bg-wrapper {
       min-height: 400px;
       height: auto;
+      margin-top: 55px;
     }
     header .row-fluid {
       height: 50% !important;
@@ -2961,6 +2968,13 @@ input[type="radio"] {
     float: left;
     width: 50%;
     padding: 5px;
+    display: flex;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column{
+        width: 100%;
+    }
   }
   
   /* Clear floats after image containers */
@@ -3005,11 +3019,11 @@ input[type="radio"] {
         }
 
         .image.fit {
-            display: block;
+            display: flex;
+            align-items: center;
             margin: 0 auto;
             margin-top: 10px;
             margin-bottom: 10px;
-            width: 80%;
         }
 
             .image.fit img {
@@ -3041,6 +3055,7 @@ input[type="radio"] {
             margin-top: 10px;
             margin-bottom: 10px;
             width: 100%;
+            padding-left: 1em;
         }
     }
 
@@ -3058,7 +3073,6 @@ input[type="radio"] {
 
     ul {
         list-style: disc;
-        margin: 0 0 2em 0;
         padding-left: 1em;
     }
 
@@ -3651,7 +3665,7 @@ input[type="radio"] {
     @media screen and (max-width: 736px) {
 
         .wrapper > .inner {
-            padding: 3em 2em 1em 2em;
+            padding: 2em 2em 1em 2em;
         }
     }
 
@@ -3868,7 +3882,6 @@ input[type="radio"] {
     @media screen and (max-width: 480px) {
 
         #header {
-            display: block;
             padding: 0 2em;
             text-align: center;
         }

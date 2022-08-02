@@ -14,10 +14,19 @@
 	</head>
 	<body class="is-preload">
 
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">JorgeLS</a>
-			</header>
+		<!-- Sidebar -->
+		<section id="sidebar">
+			<div class="inner">
+				<nav>
+					<ul>
+						<li><a href="index.html#intro1">Me</a></li>
+						<li><a href="index.html#one">Skills</a></li>
+						<li><a href="index.html#two">Projects</a></li>
+						<li><a href="index.html#three">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -47,46 +56,75 @@
 								The objective is to find two specific terminals that will allow the player to go back to the board game, however while the player is trapped, shooting at robots while figuring where Terminals are on the labyrinth is the most fun part for me.
 								So, this is that I did: 
 								<h3>Robots</h3>
-								<ul>
-									<li> The behaviour for the enemy robots: </li>
-									<ul>
-										<li> Randomly patrol on the MAZE, until a player enters their field of view, or shoots at them.</li>
-										<li> Chase the player around the map using AI movement.</li>
-										<li> When a player is close to them, the self-destruct counter will start, making them jump, play an alerting sound and a glowing effect is triggered. It's pretty scary if you don't notice them... </li>
-										<li> They need to be shot 3 times in order to destroy them and not damage the player... Did I mention that, if the player gets damaged 5 times, it will be game over for everyone?</li>
-									</ul>
-								</ul>
-								<span class="image fit"><img src="images/Gifs/CA_Robots2.gif" alt="" /></span>
-								<ul>
-									<li> Spatialized sound implementation for all the robot actions: </li>
-									<ul>
-										<li> Matching footstep sound with walking, and running through animation events. </li>
-										<li> About to explode, exploding and getting damaged sounds. </li>
-									</ul>
-									<li> Implemented all the gun mechanics for destroying the robots: </li>
-									<ul>
-										<li> I used a gun from the Lyra project template (By Epic games) and adapted it to VR. The model, Niagara VFX and SFX come were taken from that same project.</li>
-										<li> Used a shooting mechanism that damages the robots.</li>
-									</ul>
-								</ul>
-								<span class="image fit"><img src="images/Gifs/CA_Robots1.gif" alt="" /></span>
+
+								<div class="row">
+									<div class="column">
+										<ul>
+											<li> The behaviour for the enemy robots: </li>
+											<ul>
+												<li> Randomly patrol on the MAZE, until a player enters their field of view, or shoots at them.</li>
+												<li> Chase the player around the map using AI movement.</li>
+												<li> When a player is close to them, the self-destruct counter will start, making them jump, play an alerting sound and a glowing effect is triggered. It's pretty scary if you don't notice them... </li>
+												<li> They need to be shot 3 times in order to destroy them and not damage the player... Did I mention that, if the player gets damaged 5 times, it will be game over for everyone?</li>
+											</ul>
+										</ul>
+									</div>
+									<div class="column">
+										<span class="image fit"><img src="images/Gifs/CA_Robots2.gif" alt="" /></span>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="column">
+										<ul>
+											<li> Spatialized sound implementation for all the robot actions: </li>
+											<ul>
+												<li> Matching footstep sound with walking, and running through animation events. </li>
+												<li> About to explode, exploding and getting damaged sounds. </li>
+											</ul>
+											<li> Implemented all the gun mechanics for destroying the robots: </li>
+											<ul>
+												<li> I used a gun from the Lyra project template (By Epic games) and adapted it to VR. The model, Niagara VFX and SFX come were taken from that same project.</li>
+												<li> Used a shooting mechanism that damages the robots.</li>
+											</ul>
+										</ul>
+									</div>
+									<div class="column">
+										<span class="image fit"><img src="images/Gifs/CA_Robots1.gif" alt="" /></span>
+									</div>
+								</div>
+
 								<h3>Puzzles</h3>
 								When a player finds and enters a Terminal, two different puzzles can be spawned:
-								<ul>
-									<li>  
-										A memory puzzle. The player can grab and move to check the position of different shapes. Once a shape is selected, the rest of them will change to the same shape.
-										The goal is to find where the matching pieces are and select them one after the other.
-										Once the user has found all the matching pairs, the puzzle will be completed. 
-									</li>
-								</ul>
-								<span class="image fit"><img src="images/Gifs/CA_Puzzle1.gif" alt="" /></span>
-								<ul>
-									<li>
-										An alignement puzzle. The player needs to grab the moving sphere and align the connection lasers to the contact points that are scattered around.
-										The goal is to align all the cables at the same time. This one, although sounds pretty simple to solve, because of the niagara effects implementation and the very bright lights (because of post processing), can be pretty confusing.
-									</li>
-								</ul>
-								<span class="image fit"><img src="images/Gifs/CA_Puzzle2.gif" alt="" /></span>
+								<div class="row">
+									<div class="column">
+										<ul>
+											<li>  
+												A memory puzzle. The player can grab and move to check the position of different shapes. Once a shape is selected, the rest of them will change to the same shape.
+												The goal is to find where the matching pieces are and select them one after the other.
+												Once the user has found all the matching pairs, the puzzle will be completed. 
+											</li>
+										</ul>
+									</div>
+									<div class="column">
+										<span class="image fit"><img src="images/Gifs/CA_Puzzle1.gif" alt="" /></span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="column">
+										<ul>
+											<li>
+												An alignement puzzle. The player needs to grab the moving sphere and align the connection lasers to the contact points that are scattered around.
+												The goal is to align all the cables at the same time. This one, although sounds pretty simple to solve, because of the niagara effects implementation and the very bright lights (because of post processing), can be pretty confusing.
+											</li>
+										</ul>
+									</div>
+									<div class="column">
+										<span class="image fit"><img src="images/Gifs/CA_Puzzle2.gif" alt="" /></span>
+									</div>
+								</div>
+								
+								
 							</p>
 
 							<h2> </h2>
