@@ -180,6 +180,10 @@ p {
     margin: 0 0 2em 0;
 }
 
+.RowText{
+    padding-left: 1em;
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
     font-weight: bold;
