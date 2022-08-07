@@ -80,7 +80,7 @@
 								<br><br>
 								<br><br>
 								<h3>Programming</h3>
-								The project required us to use Unity, so I set up the repository on Github and a basic engine structure with the XR Interaction Toolkit, for which I had a coulpe of sessions with the other team memebrs for teaching them how to use, since not everyone had experience with either Github, or Unity.
+								The project required us to use Unity, so I set up the repository on Github and a basic engine structure with the XR Interaction Toolkit, for which I had a coulpe of sessions with the other team members for teaching them how to use, since not everyone had experience with either Github, or Unity.
 								<br>
 								<div class="row">
 									<div class="column">
@@ -98,8 +98,7 @@
 									</div>
 								</div>
 								
-								<br><br>
-								<h5> What I could have improved: </h5>
+								<h4> What I could have improved: </h4>
 								<ul>
 									<li>
 										<!-- ** TODO CREATE A SIMPLE DESIGN OF HOW IT COULD LOOK ** (FIGMA?) -->
@@ -110,7 +109,8 @@
 										I'm also very sure that the other interactions, such as grabbing an item, controlling lights, playing or pausing a visual effect, etc. Although they must be initially programmed, they could be kept on a list and then called and adjusted also in engine, so it makes the job for the designers way easier.
 									</li>
 								</ul>
-								<h5> If you want to know a little more about how everything works... </h5>
+								<br>
+								<h4> If you want to know a little more about how everything works... </h4>
 								I decided to create a coroutine event based communication between an interactions manager script, characters, a player, and scene actions.
 								The manager script iterates through a list that is filled on the inspector per scene and calls the respective event, so the subscribed class performs somehting. <!-- *ADD IMAGE OF LIST IN INSPECTOR AND HOW THE EVENT IS CALLED ON THE DoNextInteraction() mehtod* -->
 								<ul>
@@ -124,9 +124,18 @@
 									</li>
 									<li>
 										A player:
-
+										<ul>
+											<li>A dialogue with a text to be displayed, and either an audio or a fixed duration.</li>
+											<li>Be positioned somewhere</li>
+											<li>Interact with the environment</li>
+										</ul>
 									</li>
-									
+									<li>
+										Visual effects:
+										<ul>
+											<li>A manager class that is in charge of tweening post processing effect values to adjust for great visual effects. </li>
+										</ul>
+									</li>
 								</ul>
 							</p>
 						</div>
