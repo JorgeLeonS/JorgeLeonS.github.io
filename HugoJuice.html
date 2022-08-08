@@ -36,31 +36,66 @@
 						<div class="inner clearText">
 							<h1 class="major">Hugo Juice</h1>
 							<!-- TODO Add the src -->
-							<p>Pending video...</p>
-							<iframe class="video" src="https://www.youtube.com/embed/5_3_r50QQyAasd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<!-- <p>Pending video...</p>
+							<iframe class="video" src="https://www.youtube.com/embed/5_3_r50QQyAasd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 							<h2>What is it?</h2>
-							<p>
-								Pending description...
-							</p>
-							<h2>How did we do it?</h2>
-							<p>
-								Pending description...
-							</p>
+							<div class="row">
+								<div class="column">
+									<p class="RowText">
+										We were tasked to recreate a beat saber clone with a twist of our own, that's how this game came to life.
+										In a team of four, formed by three Mexicans and one Korean, we thought of cutting fruit to recreate such game mechanic.
+										And also, of combining our cultures, by adding each level with a different level deign and, of course, a matching song.
+									</p>
+								</div>
+								<div class="column">
+									<span class="image fit"><img src="images/Gifs/HugoJuice/LevelKor.gif" alt="" /></span>
+								</div>
+							</div>
+							
 							<h2>What did I do?</h2>
 							<p>
-								Pending description...
-								<h5> What I could have improved: </h5>
-								<ul>
-									<li>
-										List Item 
-									</li>
-									<li>
-										Another list item
-									</li>
-								</ul>
-								<h5> If you want to know a little more about how everything works... </h5>
-								Pending description...
+								The team was conformed of mostly programming oriented people, and all of us had some knowledge of 3D art, that's why we had to divide the tasks, so all of us could have a good portion of work.
+								In my case, I implemented:
 							</p>
+							<div class="row">
+								<div class="column">
+									<ul>
+										<li>
+											The slicing mechanic, which depending on the speed that the sword is moved it is inherited to the sliced objects, that can be indefinitely created. We limited to only two slices per original object, to save on performance.
+											This works by three different scritps, a slicer, a sliceable and the sword, this last one containing the logic to communicate the first two.
+										</li>
+									</ul>
+								</div>
+								<div class="column">
+									<span class="image fit"><img src="images/Gifs/HugoJuice/LevelMenu.gif" alt="" /></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="column">
+									<ul>
+										<li>
+											The score count and save, so every time you play, the score you get is compared to the top 3 (locally) and it can decide wether or not there should be a new top position.
+										</li>
+										<li>
+											The spawning of the objects on beat. Although the basic version of the code was provided by our professor, Erik Roystan, the three coders on the team took on the task to make it match with random spawning positons and adapt it to our songs.
+										</li>
+									</ul>
+								</div>
+								<div class="column">
+									<span class="image fit"><img src="images/Gifs/HugoJuice/LevelMex.gif" alt="" /></span>
+								</div>
+							</div>
+
+							<h2>Credits</h2>
+							<p>
+								Final homework for the Unity class on the VR and AR Design and development course at Vancouver Film School. 
+								Team members:
+								<a href="">Hannah Lee</a>
+								<a href="">Hugo Carrillo</a>
+								<a href="">Morlán Beltrán</a>
+								<a href="">Jorge León</a>
+							</p>
+
 						</div>
 					</section>
 

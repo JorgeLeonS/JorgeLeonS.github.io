@@ -35,6 +35,8 @@
 					<section id="main" class="wrapper descriptionPage">
 						<div class="inner clearText">
 
+							
+							
 							<!-- GEOMETRY GUARS -->
 							<h1 class="major">
 								1. Geometry Guars
@@ -60,9 +62,105 @@
 								</div>
 							</div>
 							
+							<!-- STAR WOLF -->
+							<h1 class="major">
+								2. Star Wolf
+								<a href="https://github.com/JorgeLeonS/StarWolf_Game" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a>
+							</h1>
+							<p>
+								Consists in a space based game, where the player constantly moves forward while avoiding and/or shooting different objects such as inmobile mines, and space debris, but also following enemies. The movement mechanics is based on the game Starfox.
+							</p>
+							<div class="row">
+								<div class="column">
+									<ul>
+										<li>
+											Single and Multiplayer mode through UNet Networking (The same level is used in both modes but object instancing number is reduced in Multiplayer for better performance).
+										</li>
+									</ul>
+								</div>
+								<div class="column">
+									<span class="image fit"><img src="images/StarWolf/DemoImage2.png" alt="" /></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="column">
+									<ul>
+										<li>
+											A Cinemachine Dolly Cart is implemented to keep a constant forward movement, limiting X and Y with the camera view
+										</li>
+										<li>
+											Instancing for different objects within an specified area, where every object type is assigned: 
+											<ul>
+												<li>
+													A random size in a range of values.
+												</li>
+												<li>
+													A different damage if the player collides.
+												</li>
+												<li>
+													Five levels of detail, reducing the polygon count for each object depending on the distance to the player.
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<div class="column">
+									<span class="image fit"><img src="images/StarWolf/DemoImage3.png" alt="" /></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="column">
+									<ul>
+										<li>
+											The following enemy guides itself to the player with a Finite State Machine: 
+											<ul>
+												<li>
+													A Mesh Filter is positioned in the level, checking on each Update the player's position, assigning an approximate value to the texture, so the enemy can find the player.
+												</li>
+												<li>
+													The player's position in the mesh can be seen with a Mesh Filter texture color, but it's disabled so as not to interfere with sight.
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<div class="column">
+									<span class="image fit"><img src="images/StarWolf/DemoImage4.png" alt="" /></span>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="column">
+									<ul>
+										<li>
+											The Mines that automatically end the game when the player collides with them are Tessellated octahedrons. 
+											<ul>
+												<li>
+													The octahedron is modeled inside the script with vertex, faces and connections.
+												</li>
+												<li>
+													It is tessellated 4 times, so it has the appearance of a sphere.
+												</li>
+												<li>
+													5 spikes are randomly generated for each sphere with normalized vectors.
+												</li>
+											</ul>
+										</li>
+										<li>
+											A rear view that shows when the player hits "3". It's a Render Texture that's positioned behind the player. When it's activated, the ship will also shoot backwards.
+										</li>
+									</ul>
+								</div>
+								<div class="column">
+									<span class="image fit"><img src="images/StarWolf/DemoImage6.png" alt="" /></span>
+								</div>
+							</div>
+							<h2>Credits</h2>
+							<p>Final project for the Modeling and Animation class at the ITESM. Developed by: Alfredo Prado Cajiga, Alonso Narro Delgado and Jorge León Salas, assets and programming with the guidance of the professor, Sergio Ruiz Loza.</p>
+							
 							<!-- BOW PLATFORMER -->
 							<h1 class="major">
-								2. Bow platformer
+								3. Bow platformer
 								<a href="https://github.com/JorgeLeonS/Unity-Games/tree/master/BowPlatformer" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a>
 							</h1>
 							<p>
@@ -99,10 +197,101 @@
 									<span class="image fit"><img src="images/Gifs/Bows1.gif" alt="" /></span>
 								</div>
 							</div>
+
+							<!-- PON TU SEMILLA -->
+							<h1 class="major">
+								4. Pon tu semilla
+								<a href="https://github.com/JorgeLeonS/PonTuSemilla" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a>
+							</h1>
+							<p>
+								Literally translated to Place/Plant a seed, it consists of a VR experience developed in Unity which objective is to make awareness of climate change. It was developed at the Tecnológico de Monterrey, Querétaro Campus in one week. Specifically developed and tested with Oculus Rift, with equiment that was provided by the School and only for delevopment purposes. Project is working with Unity version 2019.3.10f1.
+							</p>
+							<div class="row">
+								<div class="column">
+									<ul>
+										<li>
+											Oculus full functionality, such as: 
+											<ul>
+												<li>
+													Movement, collision and following cameras.
+												</li>
+												<li>
+													Distance grabbers that attract pointed objects.
+												</li>
+											</ul>
+											<br>
+										<li>
+											Reactive objects that can be grabbed when pointed at.
+										</li>
+									</ul>
+								</div>
+								<div class="column">
+									<span class="image fit"><img src="images/PonTuSemilla/DemoImage2.png" alt="" /></span>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="column">
+									<ul>
+										<li>
+											Four main scenes for climate change awareness:
+											<ol>
+												<li>
+													Introduction to the problem with a video.
+												</li>
+												<li>
+													Calling 911 to put out the fire in the forest.
+													<ul>
+														<li>
+															Fire is simulated with smoke, fire particle effects and red area lighting.
+														</li>
+													</ul>
+												</li>
+											</ol>
+										</li>
+									</ul>
+								</div>
+								<div class="column">
+									<span class="image fit"><img src="images/PonTuSemilla/DemoImage3.png" alt="" /></span>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="column">
+								<ul>
+									<ol start="3">
+										<li>
+											Organic and inorganic garbage separation
+											<ul>
+												<li>
+													Two separate garbage cans with colliders.
+												</li>
+											</ul>
+										</li>
+										<li>
+											Planting seeds for reforestation
+											<ul>
+												<li>
+													The player can grab the glowing (shader) seeds and place/throw them in any position desired. When they reach the ground, a tree will be spawned in that position.
+												</li>
+											</ul>
+										</li>
+									</ol>
+								</ul>
+								</div>
+								<div class="column">
+									<span class="image fit"><img src="images/PonTuSemilla/DemoImage4.png" alt="" /></span>
+								</div>
+							</div>
+
+							<h2>Credits</h2>
+							<p>Professors: Luis Raúl Castillo Coronel and Eduardo Rosado Colmenares
+								Unity implementation and programming: Jorge León Salas and Fernando Carrillo
+								3D models and others: Alberto Pérez and Pedro Aguirre</p>
 							
 							<!-- CADENA PERPETUA -->
 							<h1 class="major">
-								3. Cadena Perpetua
+								5. Cadena Perpetua
 								<a href="https://github.com/JorgeLeonS/CadenaPerpetua-Game" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a>
 							</h1>
 							<p>
@@ -135,7 +324,7 @@
 
 							<!-- ESCAPE VELOCITY -->
 							<h1 class="major">
-								4. Escape Velocity
+								6. Escape Velocity
 								<a href="https://github.com/JorgeLeonS/Unity-Games/tree/master/EscapeVelocity" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a>
 							</h1>
 							<p>
