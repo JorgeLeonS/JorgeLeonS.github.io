@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .galleryColumn {
+    padding: 8px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .galleryColumn {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide columns by default */
+  }
+
+  @media screen and (max-width: 480px) {
+    .galleryColumn{
+      width: 100%;
+    }
+   }
+  
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: #14281F;
+    padding: 10px;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    background-color: #F29D4B;
+    cursor: pointer;
+    margin-left: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  /* Add a dark background color to the active button */
+  .btn.active {
+    background-color: #AA4516;
+     color: white;
+  }
+
+  #myBtnContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 15px;
+  }
+
+  #myBtnContainer > button{
+    display: flex; 
+    width: 40%;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+
+/* MODAL */
+
+ /* The Modal (background) */
+ .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fefefe;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  } 
+
+   /* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: #F29D4B;
+  }
+
+  .modal-header > h2{
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  /* Modal Body */
+  .modal-body {
+    padding: 2px 16px;
+    background-color: #1F4034;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    padding: 0;
+    margin: 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  } 
